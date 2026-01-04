@@ -1,18 +1,18 @@
+import { NativeStackScreenProps } from "@react-navigation/native-stack";
+import { useEffect, useState } from "react";
 import {
-  View,
-  Text,
   FlatList,
   StyleSheet,
+  Text,
   TouchableOpacity,
+  View,
 } from "react-native";
-import { useEffect, useState } from "react";
-import { NativeStackScreenProps } from "@react-navigation/native-stack";
+import Poster from "../../assets/images/HomeBg.jpg";
+import PosterCard from "../components/PosterCard";
+import RecordCard from "../components/RecordCard";
 import { RootStackParamList } from "../navigation/RootNavigator";
 import { getRecords } from "../storage/dfmStorage";
 import { DFMRecord } from "../types/dfm";
-import RecordCard from "../components/RecordCard";
-import Poster from "../../assets/images/HomeBg.jpg";
-import PosterCard from "../components/PosterCard";
 
 type Props = NativeStackScreenProps<RootStackParamList, "Home">;
 
