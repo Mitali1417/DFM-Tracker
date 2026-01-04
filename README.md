@@ -1,7 +1,6 @@
 # Daily Fetal Movement Tracker (DFM)
 
 A React Native mobile application to track and store daily fetal movements (kick counts).  
-Built as part of the React Native Developer Intern assignment.
 
 ---
 
@@ -69,19 +68,16 @@ Each session is stored as an object:
 ```
 git clone <your-repo-url>
 cd kick-tracker
-
 ```
 
 ### 2. Install dependencies
 ```
 npm install
-
 ```
 
 ### 3. Start the app
 ```
 npx expo start
-
 ```
 
 Scan the QR code using Expo Go on Android.
