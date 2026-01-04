@@ -64,6 +64,30 @@ Each session is stored as an object:
 
 ---
 
+## ▶️ How to Run the Project Locally
+### 1. Clone the repository
+```
+git clone <your-repo-url>
+cd kick-tracker
+
+```
+
+### 2. Install dependencies
+```
+npm install
+
+```
+
+### 3. Start the app
+```
+npx expo start
+
+```
+
+Scan the QR code using Expo Go on Android.
+
+---
+
 ## 📦 APK Build
 
 The APK was generated using Expo EAS Build.
