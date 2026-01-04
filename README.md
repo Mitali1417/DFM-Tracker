@@ -1,34 +1,75 @@
-# DFM Tracker 
+# Daily Fetal Movement Tracker (DFM)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native mobile application to track and store daily fetal movements (kick counts).  
+Built as part of the React Native Developer Intern assignment.
 
-## Get started
+---
 
-1. Install dependencies
+## 📱 Features
 
-   ```bash
-   npm install
-   ```
+- Track fetal movements using a simple timer
+- Save sessions locally (no backend required)
+- View past records with date and time taken
+- Persistent data storage across app restarts
+- Informational bottom sheet explaining tracking steps
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 🧩 Screens
 
-In the output, you'll find options to open the app in a
+### Home Screen
+- Displays a list of all saved tracking sessions
+- Each record shows:
+  - Date
+  - Time taken to record 10 movements (in minutes)
+- Data persists using local storage
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Counter Screen
+- Timer starts from 00:00
+- User can:
+  - Save the session
+  - Go back without saving
+- Saved sessions appear immediately on Home screen
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Information Sheet
+- Accessible via the “i” icon
+- Displays guidance text exactly as provided in the Figma file
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## 🛠️ Tech Stack & Libraries
 
-```bash
-npm run reset-project
+- **React Native**
+- **Expo**
+- **TypeScript**
+- **React Navigation (Native Stack)**
+- **AsyncStorage** – local data persistence
+- **Expo Vector Icons**
+- **Bottom Sheet / Modal** (custom implementation)
+
+---
+
+## 💾 Data Storage Structure
+
+Each session is stored as an object:
+
+```ts
+{
+  id: string,
+  date: string,        // ISO string
+  duration: number    // time taken for 10 kicks (in seconds)
+}
+
 ```
+
+---
+
+## 📦 APK Build
+
+The APK was generated using Expo EAS Build.
+
+**Download APK:**
+👉 https://expo.dev/accounts/mitali1417/projects/kick-tracker/builds/87f68152-6a71-447e-a0c6-f55dc26dffb0
+
+
+
