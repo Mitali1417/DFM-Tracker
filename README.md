@@ -105,4 +105,4 @@ Scan the QR code using Expo Go on Android.
 The APK was generated using Expo EAS Build.
 
 **Download APK:**
-👉 https://expo.dev/accounts/mitali1417/projects/kick-tracker/builds/87f68152-6a71-447e-a0c6-f55dc26dffb0
+👉 https://expo.dev/accounts/mitali1417/projects/kick-tracker/builds/193c65f2-96f1-4741-95a8-55e7cae399cd
